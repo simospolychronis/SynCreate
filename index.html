@@ -13,6 +13,16 @@
       background-color: #f4f4f4;
       color: #333;
     }
+    nav {
+      background-color: #004c99;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
     header {
       background-color: #0066cc;
       color: #fff;
@@ -23,13 +33,6 @@
       margin: 0;
       font-size: 2.5rem;
     }
-    <nav style="background-color: #004c99; padding: 10px; text-align: center;">
-  <a href="#home" style="color: white; margin: 0 15px; text-decoration: none;">Αρχική</a>
-  <a href="#about" style="color: white; margin: 0 15px; text-decoration: none;">Τι είναι</a>
-  <a href="#how" style="color: white; margin: 0 15px; text-decoration: none;">Πώς λειτουργεί</a>
-  <a href="#join" style="color: white; margin: 0 15px; text-decoration: none;">Συμμετοχή</a>
-  <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Επικοινωνία</a>
-</nav>
     header p {
       font-size: 1.2rem;
     }
@@ -63,17 +66,25 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#home">Αρχική</a>
+    <a href="#about">Τι είναι</a>
+    <a href="#how">Πώς λειτουργεί</a>
+    <a href="#join">Συμμετοχή</a>
+    <a href="#contact">Επικοινωνία</a>
+  </nav>
+
   <header>
     <h1>SynCreate – Η ιδέα σου αξίζει συμμάχους.</h1>
     <p>Συνδέουμε ανθρώπους με κοινές επιχειρηματικές ιδέες για να τις υλοποιούν μαζί.</p>
   </header>
 
-  <section>
+  <section id="about">
     <h2>Τι είναι το SynCreate;</h2>
     <p>Το SynCreate είναι μια διαδικτυακή πλατφόρμα συνεργασίας και κοινής χρηματοδότησης. Βοηθά ανθρώπους με οραματικές ιδέες να συνδεθούν με άλλους που πιστεύουν στο ίδιο όνειρο, να δημιουργήσουν ομάδες και να μετατρέψουν τις ιδέες τους σε πραγματικότητα – μαζί.</p>
   </section>
 
-  <section>
+  <section id="how">
     <h2>Πώς λειτουργεί;</h2>
     <ol>
       <li><strong>Μοιράσου την ιδέα σου:</strong> Επέλεξε κατηγορία, γράψε περιγραφή και τι χρειάζεσαι.</li>
@@ -82,12 +93,12 @@
     </ol>
   </section>
 
-  <section>
+  <section id="join">
     <h2>Για ποιους είναι;</h2>
     <p>Το SynCreate είναι για δημιουργούς, οραματιστές, μικροεπενδυτές, φοιτητές, επαγγελματίες και κάθε άνθρωπο που θέλει να συνεργαστεί πάνω σε κάτι που τον εμπνέει.</p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Ξεκίνα τώρα</h2>
     <p>Θες να ξεκινήσεις το δικό σου project; Ψάχνεις μια ιδέα να συμμετέχεις;</p>
     <a href="#" class="button">Γράψου στη λίστα ενδιαφέροντος</a>
