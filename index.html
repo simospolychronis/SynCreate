@@ -35,7 +35,7 @@
     header {
       background-color: #ffffff;
       color: #3c3c3d;
-      padding: 60px 20px;
+      padding: 60px 20px 20px 20px;
       text-align: center;
     }
     header h1 {
@@ -47,6 +47,12 @@
       font-size: 1.3rem;
       margin-top: 15px;
       font-weight: 400;
+    }
+    .header-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      margin-bottom: 30px;
     }
     .button {
       display: inline-block;
@@ -69,18 +75,6 @@
     }
     ul, ol {
       margin-left: 20px;
-    }
-    .image-placeholder {
-      width: 100%;
-      height: 250px;
-      background-color: #e0e0e0;
-      border: 2px dashed #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #888;
-      font-size: 1rem;
-      margin: 30px 0;
     }
     .categories-list {
       display: grid;
@@ -116,13 +110,12 @@
   </nav>
 
   <header id="home">
+    <img src="images/header-image.jpg" alt="SynCreate Banner" class="header-image">
     <h1>Καλώς ήρθες στο SynCreate</h1>
     <p>Η πλατφόρμα που ενώνει ιδέες, ανθρώπους και δυνατότητες.</p>
     <p>Εδώ απευθυνόμαστε σε δημιουργικούς ανθρώπους με όραμα να υλοποιήσουν μια επιχειρηματική ιδέα. Μέσα από τις κατηγορίες της πλατφόρμας μπορείς να βρεις άτομα με παρόμοια σκέψη στον ίδιο κλάδο επιχειρηματικότητας και να ενώσετε τις δυνάμεις σας για να κάνετε πράξη το project σας.</p>
     <a href="#categories" class="button">Ξεκίνα το ταξίδι σου</a>
   </header>
-
-  <div class="image-placeholder">[Κενό για εικόνα - θα προστεθεί αργότερα]</div>
 
   <section id="about">
     <h2>Τι είναι το SynCreate;</h2>
@@ -149,6 +142,7 @@
       <div>Κοινωνικές Επιχειρήσεις</div>
       <div>Αγροδιατροφή</div>
       <div>Τουρισμός & Φιλοξενία</div>
+      <div>Φυσικές Επιχειρήσεις</div>
     </div>
   </section>
 
