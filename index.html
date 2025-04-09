@@ -82,6 +82,21 @@
       font-size: 1rem;
       margin: 30px 0;
     }
+    .categories-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .categories-list div {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
     footer {
       background-color: #3c3c3d;
       color: #aaa;
@@ -104,7 +119,7 @@
     <h1>Καλώς ήρθες στο SynCreate</h1>
     <p>Η πλατφόρμα που ενώνει ιδέες, ανθρώπους και δυνατότητες.</p>
     <p>Εδώ απευθυνόμαστε σε δημιουργικούς ανθρώπους με όραμα να υλοποιήσουν μια επιχειρηματική ιδέα. Μέσα από τις κατηγορίες της πλατφόρμας μπορείς να βρεις άτομα με παρόμοια σκέψη στον ίδιο κλάδο επιχειρηματικότητας και να ενώσετε τις δυνάμεις σας για να κάνετε πράξη το project σας.</p>
-    <a href="#join" class="button">Ξεκίνα το ταξίδι σου</a>
+    <a href="#categories" class="button">Ξεκίνα το ταξίδι σου</a>
   </header>
 
   <div class="image-placeholder">[Κενό για εικόνα - θα προστεθεί αργότερα]</div>
@@ -121,6 +136,20 @@
       <li><strong>Βρες συμμάχους:</strong> Μέσα από τη μηχανή αντιστοίχισης ή την αναζήτηση.</li>
       <li><strong>Υλοποιήστε μαζί:</strong> Οργάνωσε την ομάδα, εξασφάλισε κεφάλαιο και ξεκινήστε!</li>
     </ol>
+  </section>
+
+  <section id="categories">
+    <h2>Κατηγορίες Επιχειρηματικών Ιδεών</h2>
+    <div class="categories-list">
+      <div>Τεχνολογία</div>
+      <div>Εκπαίδευση</div>
+      <div>Υγεία & Ευεξία</div>
+      <div>Περιβάλλον & Βιωσιμότητα</div>
+      <div>Καλλιτεχνικά & Πολιτισμός</div>
+      <div>Κοινωνικές Επιχειρήσεις</div>
+      <div>Αγροδιατροφή</div>
+      <div>Τουρισμός & Φιλοξενία</div>
+    </div>
   </section>
 
   <section id="join">
