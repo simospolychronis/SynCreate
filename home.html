@@ -1,1 +1,216 @@
 
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynCreate - Βρείτε Συνεργάτες &amp; Κεφάλαιο</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .tagline {
+            font-style: italic;
+            color: #eee;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .start-section {
+            background-color: #e9ecef;
+            padding: 3em 20px;
+            border-radius: 8px;
+            margin-bottom: 2em;
+        }
+        .start-section h2 {
+            color: #007bff;
+            margin-bottom: 1em;
+        }
+        #start-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            font-size: 1em;
+        }
+        #start-button:hover {
+            background-color: #218838;
+        }
+        #options-container {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .option-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0 10px;
+            border: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .option-button:hover {
+            background-color: #5a6268;
+        }
+        .secondary-options-container {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .secondary-option {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .secondary-option button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .secondary-option button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SynCreate</h1>
+        <p class="tagline">Συνεργαστείτε για να Καινοτομήσετε.</p>
+    </header>
+
+    <main class="main-content">
+        <section class="start-section">
+            <h2>Βρείτε τους Συνεργάτες και το Κεφάλαιο που Χρειάζεστε</h2>
+            <p>Κάντε το πρώτο βήμα για να μετατρέψετε την ιδέα σας σε πραγματικότητα.</p>
+            <button id="start-button">Ξεκινήστε Τώρα</button>
+
+            <div id="options-container">
+                <h3>Έχετε μια Ιδέα;</h3>
+                <button class="option-button" id="idea-button">Έχω μια Ιδέα</button>
+                <button class="option-button" id="capital-button">Ψάχνω Κεφάλαιο</button>
+            </div>
+
+            <div id="idea-options" class="secondary-options-container">
+                <h3>Τι ψάχνετε;</h3>
+                <div class="secondary-option">
+                    <button id="find-partners-idea">Βρείτε Ανθρώπους με την Ίδια Ιδέα</button>
+                </div>
+                <div class="secondary-option">
+                    <button id="find-needs-idea">Βρείτε τους Ανθρώπους που Χρειάζεστε Τώρα</button>
+                </div>
+            </div>
+
+            <div id="capital-options" class="secondary-options-container">
+                <h3>Τι σας ενδιαφέρει;</h3>
+                <div class="secondary-option">
+                    <button id="invest-ideas-capital">Επενδύστε σε Έξυπνες Καινοτόμες Ιδέες</button>
+                </div>
+                <div class="secondary-option">
+                    <button id="find-capital-capital">Βρείτε Κεφάλαιο Τώρα</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SynCreate - Δημιουργήθηκε για Εσάς</p>
+    </footer>
+
+    <script>
+        const startButton = document.getElementById('start-button');
+        const optionsContainer = document.getElementById('options-container');
+        const ideaButton = document.getElementById('idea-button');
+        const capitalButton = document.getElementById('capital-button');
+        const ideaOptions = document.getElementById('idea-options');
+        const capitalOptions = document.getElementById('capital-options');
+        const findPartnersIdeaButton = document.getElementById('find-partners-idea');
+        const findNeedsIdeaButton = document.getElementById('find-needs-idea');
+        const investIdeasCapitalButton = document.getElementById('invest-ideas-capital');
+        const findCapitalCapitalButton = document.getElementById('find-capital-capital');
+
+        startButton.addEventListener('click', () => {
+            startButton.style.display = 'none';
+            optionsContainer.style.display = 'block';
+            ideaOptions.style.display = 'none';
+            capitalOptions.style.display = 'none';
+        });
+
+        ideaButton.addEventListener('click', () => {
+            optionsContainer.style.display = 'none';
+            ideaOptions.style.display = 'block';
+            capitalOptions.style.display = 'none';
+        });
+
+        capitalButton.addEventListener('click', () => {
+            optionsContainer.style.display = 'none';
+            capitalOptions.style.display = 'block';
+            ideaOptions.style.display = 'none';
+        });
+
+        findPartnersIdeaButton.addEventListener('click', () => {
+            alert('Λειτουργία για εύρεση ανθρώπων με την ίδια ιδέα (θα υλοποιηθεί σύντομα).');
+            // Εδώ θα μπορούσε να υπάρχει κώδικας για μετάβαση σε μια σελίδα/λειτουργία εύρεσης συνεργατών με κοινές ιδέες.
+        });
+
+        findNeedsIdeaButton.addEventListener('click', () => {
+            alert('Λειτουργία για εύρεση των ανθρώπων που χρειάζεστε για την ιδέα σας (θα υλοποιηθεί σύντομα).');
+            // Εδώ θα μπορούσε να υπάρχει κώδικας για φόρμα περιγραφής αναγκών και ανεύρεσης κατάλληλων προφίλ.
+        });
+
+        investIdeasCapitalButton.addEventListener('click', () => {
+            alert('Λειτουργία για επένδυση σε έξυπνες καινοτόμες ιδέες (θα υλοποιηθεί σύντομα).');
+            // Εδώ θα μπορούσε να υπάρχει κώδικας για λίστα και περιγραφές καινοτόμων ιδεών που αναζητούν χρηματοδότηση.
+        });
+
+        findCapitalCapitalButton.addEventListener('click', () => {
+            alert('Λειτουργία για εύρεση κεφαλαίου για την ιδέα σας (θα υλοποιηθεί σύντομα).');
+            // Εδώ θα μπορούσε να υπάρχει κώδικας για φόρμα υποβολής αιτήματος χρηματοδότησης και σύνδεσης με επενδυτές.
+        });
+    </script>
+
+</body>
+</html>
